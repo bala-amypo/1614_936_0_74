@@ -3,30 +3,30 @@ package com.example.demo.entity;
 @Entity
 
 public class StudentEntity{
-    private String username;
     private Integer id;
+    private String username;
     private String email;
     private String password;
-    private Date createAt;
+    private Date created;
     
-    public String getname(){
+    public String getName(){
         return name;
     }
     
-    public String getemail(){
+    public String getEmail(){
         return email;
     }
     
-    public String getpassword(){
+    public String getPassword(){
         return password;
     }
     
-    public Integer getid(){
+    public Integer getId(){
         return id;
     }
     
-    public Date getcreateAt(){
-        return createAt;
+    public Date getCreated(){
+        return created;
     }
 
     public String setName(String name){
@@ -42,14 +42,8 @@ public class StudentEntity{
         this.id=id;
     }
     public void setCreated(Date created){
-        this.name=created;
-    }
-
-
-
-
-
-
-    
+        this.created=created;
+    }    
+    public St
 }
 
