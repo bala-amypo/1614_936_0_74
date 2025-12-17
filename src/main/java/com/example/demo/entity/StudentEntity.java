@@ -1,10 +1,16 @@
 package com.example.demo.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence
+
 @Entity
 
 public class StudentEntity{
+    @Id
+    @GeneratedValue
     private Integer id;
-    private String username;
+    private String name;
     private String email;
     private String password;
     private Date created;
@@ -44,6 +50,12 @@ public class StudentEntity{
     public void setCreated(Date created){
         this.created=created;
     }    
-    public St
+    public StudentEntity(Integer id,String name,String email,String password,Date created){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.password=password;
+        this.created=created;
+    }
 }
 
