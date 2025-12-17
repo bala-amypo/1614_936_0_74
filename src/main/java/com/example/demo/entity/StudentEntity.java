@@ -25,9 +25,31 @@ public class StudentEntity{
         return id;
     }
     
-    public Date get(){
-        return id;
+    public Date getcreateAt(){
+        return createAt;
     }
+
+    public String setName(String name){
+        this.name=name;
+    }
+    public String setEmail(String email){
+        this.email=email;
+    }
+    public String setPassword(String password){
+        this.password=password;
+    }
+    public Integer setId(Integer id){
+        this.id=id;
+    }
+    public void setCreated(Date created){
+        this.name=created;
+    }
+
+
+
+
+
+
     
 }
 
