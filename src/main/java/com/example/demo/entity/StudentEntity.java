@@ -2,4 +2,10 @@ package com.example.demo.entity;
 
 @Entity
 
-public class StudentEntity
+public class StudentEntity{
+    private String username;
+    private Integer id;
+    private String email;
+    private String password;
+    private Date createAt;
+}
