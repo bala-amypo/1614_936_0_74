@@ -3,12 +3,12 @@ import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GeneratedType;
+import jakarta.persistence.GenerationType;
 @Entity
 
 public class StudentEntity{
     @Id
-    @GeneratedValue(strategy=GeneratedType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;
@@ -35,16 +35,16 @@ public class StudentEntity{
         return created;
     }
 
-    public String setName(String name){
+    public void setName(String name){
         this.name=name;
     }
-    public String setEmail(String email){
+    public void setEmail(String email){
         this.email=email;
     }
-    public String setPassword(String password){
+    public void setPassword(String password){
         this.password=password;
     }
-    public Integer setId(Integer id){
+    public void setId(Integer id){
         this.id=id;
     }
     public void setCreated(Date created){
