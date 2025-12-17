@@ -19,6 +19,7 @@ public class StudentEntity{
         return name;
     }
     
+    
     public String getEmail(){
         return email;
     }
