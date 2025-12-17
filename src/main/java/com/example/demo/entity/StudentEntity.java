@@ -8,5 +8,10 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date createAt;
+    
+    public String getName(){
+        return name;
+    }
+    public 
 }
 
