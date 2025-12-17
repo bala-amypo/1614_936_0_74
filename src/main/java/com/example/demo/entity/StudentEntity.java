@@ -9,9 +9,25 @@ public class StudentEntity{
     private String password;
     private Date createAt;
     
-    public String getName(){
+    public String getname(){
         return name;
     }
-    public 
+    
+    public String getemail(){
+        return email;
+    }
+    
+    public String getpassword(){
+        return password;
+    }
+    
+    public Integer getid(){
+        return id;
+    }
+    
+    public Date get(){
+        return id;
+    }
+    
 }
 
