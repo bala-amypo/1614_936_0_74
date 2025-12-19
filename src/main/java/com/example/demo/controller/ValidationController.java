@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
@@ -15,5 +16,8 @@ public class ValidationController{
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity stu){
         return serve.post(stu);
     }
-    @GetMapping("/set")
+    @GetMapping("/getdata/{id}")
+    public ValidationEntity findVal(@PathVariable int id){
+        return serve.finddata(id);
+    }
 }
