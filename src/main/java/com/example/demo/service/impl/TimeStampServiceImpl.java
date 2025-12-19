@@ -12,11 +12,7 @@ public class TimeStampServiceImpl implements TimeStampService{
      @Autowired ValidationRepository dent;
      
           @Override
-          public TimeStamp post(TimeStamp stu){
-               return dent.save(stu);
-          }
-          @Override
-          public TimeStamp finddata(Long id){
-               return dent.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
+          public TimeStamp post1(TimeStamp c){
+               return dent.save(c);
           }
 }
