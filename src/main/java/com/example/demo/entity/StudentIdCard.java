@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
