@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PrePers;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.NoArgsConstructor;
@@ -22,8 +24,12 @@ public class TimeStampEntity{
 
     @PrePersist
     public void OnCreate(){
-        LocalDateTime now = LocalDateTime().now();
-        this.createAt=now;
-        this.updateAt=now;
+        LocalDateTime now1 = LocalDateTime().now();
+        this.createAt=now1;
+        this.updateAt=now1;
+    }
+    @preUpdate
+    public void OnUpdate(){
+    this.updateAt = now;
     }
 }
