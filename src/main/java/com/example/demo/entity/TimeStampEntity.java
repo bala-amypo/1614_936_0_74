@@ -30,6 +30,6 @@ public class TimeStampEntity{
     }
     @PreUpdate
     public void OnUpdate(){
-    this.updateAt = now;
+    this.updateAt =now;
     }
 }
