@@ -19,4 +19,9 @@ public class TimeStampEntity{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
+
+    @PrePersist
+    public void OnCreate(){
+        LocalDateTime now
+    }
 }
