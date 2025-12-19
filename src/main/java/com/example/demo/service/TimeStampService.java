@@ -1,7 +1,7 @@
 package com.example.demo.service;
-import com.example.demo.entity.ValidationEntity;
+import com.example.demo.entity.TimeStamp;
 import java.util.*;
 public interface TimeStampService{
-     post(ValidationEntity stu);
-    ValidationEntity finddata(Long id);
+    TimeStamp post(TimeStamp stu);
+    TimeStamp finddata(Long id);
 }
