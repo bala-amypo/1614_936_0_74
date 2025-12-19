@@ -12,6 +12,7 @@ import jakarta.persistence.GenerationType;
 @AllArgsConstructor
 public class StudentIdCard{
     @OneToOne
+    @JoinColumn(name="student_id")
     private StudentDetails detail;
     private String idCardNum;
 }
