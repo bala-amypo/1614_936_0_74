@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.example.demo.entity.TimeStamp;
+import com.example.demo.entity.TimeStampEntity;
 import com.example.demo.service.TimeStampService;
 import jakarta.validation.Valid;
 @RestController
 public class TimeStampController{
     @Autowired TimeStampService serve;
     @PostMapping("/data")
-    public TimeStamp sendData(@Valid @RequestBody TimeStamp stu){
+    public TimeStampEntity sendData(@Valid @RequestBody TimeStampEntity stu){
         return serve.post(stu);
     }
 

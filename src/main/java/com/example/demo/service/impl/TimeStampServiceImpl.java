@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class TimeStampServiceImpl implements TimeStampService{
-     @Autowired TimeStampRepository dent;
+     @Autowired TimeStampRepository den;
      
           @Override
           public TimeStampEntity post1(TimeStampEntity c){
-               return dent.save(c);
+               return den.save(c);
           }
 }
