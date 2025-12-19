@@ -11,6 +11,7 @@ import jakarta.persistence.GenerationType;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StudentIdCard{
-    private 
+    @OneToOne
+    private StudentDetails detail;
     private String idCardNum;
 }
