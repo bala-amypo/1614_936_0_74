@@ -12,10 +12,10 @@ import com.example.demo.service.TimeStampService;
 import jakarta.validation.Valid;
 @RestController
 public class TimeStampController{
-    @Autowired TimeStampService serve;
-    @PostMapping("/data")
+    @Autowired TimeStampService serve1;
+    @PostMapping("/data1")
     public TimeStampEntity sendData(@Valid @RequestBody TimeStampEntity stu){
-        return serve.post(stu);
+        return serve1.post(stu);
     }
 
 }
