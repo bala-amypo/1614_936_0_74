@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TimeStamp{
+public class TimeStampEntity{
     private Long id;
     private String name;
     private String email;

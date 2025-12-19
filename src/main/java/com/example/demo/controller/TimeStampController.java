@@ -8,17 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.demo.entity.TimeStamp;
-import com.example.demo.service.ValidationService;
+import com.example.demo.service.TimeStampService;
 import jakarta.validation.Valid;
 @RestController
 public class TimeStampController{
-    @Autowired ValidationService serve;
+    @Autowired TimeStampService serve;
     @PostMapping("/data")
     public TimeStamp sendData(@Valid @RequestBody TimeStamp stu){
         return serve.post(stu);
     }
-    @GetMapping("/getdata/{id}")
-    public TimeStamp findVal(@PathVariable Long id){
-        return serve.finddata(id);
-    }
+
 }
