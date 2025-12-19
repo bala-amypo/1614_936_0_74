@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
@@ -11,6 +12,8 @@ import jakarta.persistence.GenerationType;
 @NoArgsConstructor
 @AllArgsConstructor
 public class StudentIdCard{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @OneToOne
     @JoinColumn(name="student_id")
     private StudentDetails detail;
