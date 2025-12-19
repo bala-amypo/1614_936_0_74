@@ -25,13 +25,13 @@ public class TimeStampEntity{
     @PrePersist
     public void OnCreate(){
         LocalDateTime now = LocalDateTime.now();
-        if(this.create==null){
+        if(this.createAt==null){
             this.createAt=now;
         }
         this.updateAt=now;
     }
     @PreUpdate
     public void OnUpdate(){
-        this.updateAt =now;
+        this.updateAt =LocalDateTime.now();
     }
 }
